@@ -1,0 +1,20 @@
+{
+  "typeID": "VSIFS2",
+  "messageDateTime": "dateFormat1",
+  "objectID": "FC000000000000000000000000B98183",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "columnDate": "dateFormat2",
+  "columnDateGMTOffset": "0",
+  "cells": [{
+    "typeCatID": "a2eb36f5217d611cbbd4c180d720bb39",
+    "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351",
+    "labelID": "a83599934b6e47bbb1f0159f06015e81",
+    "objectID": "C1000000000000000000000000B98183",
+    "attributes": [{
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351",
+      "typeValueID": "492f2179d6f04e938859eb0e0d2db3b0",
+      "gcsTotalPresent": "1",
+      "value": "c73d60a66ae8434c96826fb00bbfa82b"
+    }]
+  }]
+}

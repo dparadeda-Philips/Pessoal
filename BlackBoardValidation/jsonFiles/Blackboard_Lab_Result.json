@@ -1,0 +1,34 @@
+{
+    "typeID": "LABS",
+    "messageDateTime": "dateFormat1",
+    "patientHealthSystemStayID": "00000000000000000000000000000882",
+    "labOrderNumber": "00000000000000000000000000162950",
+    "objectID": "00000000000000000000000000162950",
+    "labResultDateGMT": "dateFormat2",
+    "labResultDateGMTOffset": "0",
+    "labTypeID": "c83183bfac984fa0a2dc7df5dbd6c0b9",
+    "results": [
+        {
+            "objectID": "00000000000000000000000000000004",
+            "resultSourceID": "0253220e18bc4089a4dd1ad350abf795",
+            "resultStatusID": "9ef5ea20a97045fcb26dc3fcb86b6c24",
+            "labItemNameID": "77eb037db6b545cc8855c8f8ff71e8c3",
+            "labMeasurementName": "mm de Hg",
+            "resultNumeric": "50",
+            "labResultText": "50",
+            "labRangeText": "",
+            "abnormalFlag": "False"
+        },
+        {
+            "objectID": "00000000000000000000000000000005",
+            "resultSourceID": "0253220e18bc4089a4dd1ad350abf795",
+            "resultStatusID": "9ef5ea20a97045fcb26dc3fcb86b6c24",
+            "labItemNameID": "6888379d5fcd4cd8b8a4bddc73adb32c",
+            "labMeasurementName": "%",
+            "resultNumeric": "35",
+            "labResultText": "35",
+            "labRangeText": "",
+            "abnormalFlag": "False"
+        }
+    ]
+}

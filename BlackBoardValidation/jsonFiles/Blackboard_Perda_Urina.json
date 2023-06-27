@@ -1,0 +1,15 @@
+{
+  "typeID": "IOFS",
+  "messageDateTime": "dateFormat1",
+  "objectID": "ce1c28959d1c4cff990bbb9616c17110",
+  "name": "Output (ml)",
+  "objectIDCol": "FC000000000000000000000000D90135",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "columnDate": "dateFormat2",
+  "columnDateGMTOffset": "0",
+  "cellLabelID": "fa071f65005c4c6c855b93fa010012b7",
+  "cellTypeCatID": "ce1c28959d1c4cff990bbb9616c17110",
+  "objectIDCell": "C1000000000000000000000000D90135",
+  "resultStatusID": "9ef5ea20a97045fcb26dc3fcb86b6c24",
+  "valueNumeric": "1000"
+}

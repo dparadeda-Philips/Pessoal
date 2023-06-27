@@ -1,0 +1,15 @@
+{
+    "typeID": "ORDERS",
+    "messageDateTime": "dateFormat1",
+    "patientHealthSystemStayID": "00000000000000000000000000000882",
+    "drugOrderId": "36139",
+    "isOrderCancelled": "0",
+    "drugName": "ROCURONIUM BROMIDE: Neuromuscular blocker",
+    "hiclSeqNo": "8963",
+    "startDate": "dateFormat2",
+    "startDateOffset": "0",
+    "dosage": "23",
+    "dosageUnit": "46cbde6ca7794327a605bcdd06c8a951",
+    "isPRN": "d33c711e079743b4a527c3613e402f4b",
+    "routeAdminId": "6b11c6d982f54d27b624215b6f39d937"
+}

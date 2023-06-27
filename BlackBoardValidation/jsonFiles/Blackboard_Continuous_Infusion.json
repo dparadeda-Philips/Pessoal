@@ -1,0 +1,28 @@
+{
+    "typeID": "VSIFS",
+    "messageDateTime": "dateFormat1",
+    "plCategoryObjectID": "4cc5ae8ab8de6c88078d83bb56dd7d5c",
+    "plCategoryName": "Continuous Infusions",
+    "columnDate": "dateFormat2",
+    "columnDateGMTOffset": "0",
+    "patientHealthSystemStayID": "00000000000000000000000000000882",
+    "objectID": "4cc5ae8ab8de6c88078d83bb56dd7d5c",
+    "labels": [
+        {
+            "label": "Vecuronium",
+            "objectID": "d8a6121ce0fd48baa9395bf5013055a2"
+        }
+    ],
+    "cells": [
+        {
+            "cellLabelID": "d8a6121ce0fd48baa9395bf5013055a2",
+            "cellTypeCatID": "4cc5ae8ab8de6c88078d83bb56dd7d5c",
+            "cellResultStatusID": "9ef5ea20a97045fcb26dc3fcb86b6c24",
+            "attributeObjectID": "b570f680f34e44418cfb4c8e2c57d270",
+            "attributeCellTypeValueID": "8560399070e94d7488b4be3b8912fc5b",
+            "attributeResultStatusID": "39d8f36dc43045c8b04a0a06f20b6351",
+            "attributeUnitsID": "37e41851a3cc46238f37bd8386bccadf",
+            "attributeValue": "50"
+        }
+    ]
+}
