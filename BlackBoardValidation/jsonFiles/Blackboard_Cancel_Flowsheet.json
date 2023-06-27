@@ -1,0 +1,54 @@
+{
+  "typeID": "FSDELETE",
+  "messageDateTime": "dateFormat1",
+  "vitalSign": [{
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C100000000000000000000000000000A1",
+	"cellTypeValueID" : "c51b1ead9ff94248acdc9986d9858f0b"
+  },
+  {
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C200000000000000000000000000000A1",
+	"cellTypeValueID" : "dc100b48923c4555869cea761a3f58e7"
+  },
+  {
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C300000000000000000000000000000A1",
+	"cellTypeValueID" : "3c64a7630640464a8f9da89f5213c8b4"
+  },
+  {
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C400000000000000000000000000000A1",
+	"cellTypeValueID" : "5ed47254daad4b74b70e1637a142a451"
+  },
+  {
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C500000000000000000000000000000A1",
+	"cellTypeValueID" : "1d17edd4cb194c26bdd3826909f96cce"
+  },
+  {
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C600000000000000000000000000000A1",
+	"cellTypeValueID" : "0cd403629bcf4cbaabfb8d95da5c2ce1"
+  },
+  {
+    "flowsheetTypeID" : "e0cfa360eb174a8e8b87f6d6d1a065d8",
+	"patientHealthSystemStayID" : "00000000000000000000000000000882",
+	"fsColumnID" : "FC00000000000000000000000000000A1",
+	"cellID" : "C700000000000000000000000000000A1",
+	"cellTypeValueID" : "dcd6536206d5472d9f7816c03c24d165"
+  }]
+}
+

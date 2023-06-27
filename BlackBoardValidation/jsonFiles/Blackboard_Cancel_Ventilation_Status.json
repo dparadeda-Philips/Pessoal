@@ -1,0 +1,9 @@
+{
+  "typeID": "CAREPLAN",
+  "messageDateTime": "dateFormat1",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "historyID": "000000000000000000000000000000F1",
+  "saveDateTimeUtc" : "dateFormat1",
+  "saveDateTimeUtcOffset" : "0",
+  "clearForReadmit" : ""
+}

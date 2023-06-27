@@ -1,0 +1,11 @@
+{
+  "typeID": "ADMITDIAG",
+  "messageDateTime": "dateFormat1",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "admissionDiagnosisID": "00000000000000000000000000000001",
+  "admittedFromOR" : "True",
+  "admittedElective" : "True",
+  "objectID1" : "d2bddfde11b8447f949458de5b0be424",
+  "objectID2" : "c16e7f0778704364b6dd3c4d32b7aae4",
+  "objectID3" : "fce7534340a84c5788463850b29a9c43"
+}
