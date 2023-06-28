@@ -1,0 +1,60 @@
+{
+  "typeID": "RESPFS",
+  "messageDateTime": "dateFormat1",
+  "objectID": "e031add95b244818a4d8c0cf377dfdd0",
+  "name": "Settings",
+  "objectIDColumn": "FC0000000000000000000000000000E1",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "columnDate": "dateFormat2",
+  "columnDateGMTOffset": "0",
+  "results": [
+    {
+      "objectIDCell": "C10000000000000000000000000000E1",
+      "cellLabelID": "74656a0e73084aca9dbc23389ae8ec6a",
+      "cellTypeCatID": "e031add95b244818a4d8c0cf377dfdd0",
+      "cellNumeric": "11",
+      "cellText": "11",
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351"
+    },
+    {
+      "objectIDCell": "C20000000000000000000000000000E1",
+      "cellLabelID": "033434a10edc4e5c804fd3534495eb56",
+      "cellTypeCatID": "e031add95b244818a4d8c0cf377dfdd0",
+      "cellNumeric": "22",
+      "cellText": "22",
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351"
+    },
+    {
+      "objectIDCell": "C30000000000000000000000000000E1",
+      "cellLabelID": "90beb6692a004591838e7bc7fac3028f",
+      "cellTypeCatID": "e031add95b244818a4d8c0cf377dfdd0",
+      "cellNumeric": "33",
+      "cellText": "33",
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351"
+    },
+    {
+      "objectIDCell": "C40000000000000000000000000000E1",
+      "cellLabelID": "667b94436bd941a8b81e05609223aeba",
+      "cellTypeCatID": "e031add95b244818a4d8c0cf377dfdd0",
+      "cellNumeric": "44",
+      "cellText": "44",
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351"
+    },
+    {
+      "objectIDCell": "C50000000000000000000000000000E1",
+      "cellLabelID": "e45ca28fa1d7423fa43cc0319c624104",
+      "cellTypeCatID": "e031add95b244818a4d8c0cf377dfdd0",
+      "cellNumeric": "60",
+      "cellText": "60",
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351"
+    },
+    {
+      "objectIDCell": "C60000000000000000000000000000E1",
+      "cellLabelID": "eb519365a955470198ce67271d949232",
+      "cellTypeCatID": "e031add95b244818a4d8c0cf377dfdd0",
+      "cellNumeric": "66",
+      "cellText": "66",
+      "resultStatusID": "39d8f36dc43045c8b04a0a06f20b6351"
+    }
+  ]
+}

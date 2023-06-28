@@ -1,0 +1,59 @@
+{
+	"messageDateTime": "dateFormat1",
+	"patientHealthSystemStayID": "00000000000000000000000000000882",
+	"type": "ICU",
+	"heartRate": {
+		"rangeType": "34a34fc43eeb4f669bf2f8725be33b30",
+		"severeLow": "40",
+		"moderateLow": "50",
+		"moderateHigh": "110",
+		"severeHigh": "130"
+	},
+	"bloodPressure": {
+		"rangeType": "260c70dbb0ec4a40b0a25eb06b8fbe71",
+		"severeLow": "40",
+		"moderateLow": "50",
+		"moderateHigh": "120",
+		"severeHigh": "150"
+	},
+	"respiratoryRate": {
+		"rangeType": "9af6d32864024a69830d312eff161935",
+		"severeLow": "10",
+		"moderateLow": "12",
+		"moderateHigh": "25",
+		"severeHigh": "30"
+	},
+	"oxygenSaturation": {
+		"rangeType": "d13012dc57ae4c4e8c8494936794c297",
+		"severeLow": "84",
+		"moderateLow": "92"
+	},
+	"patient": {
+		"heartRate": {
+			"rangeType": "34a34fc43eeb4f669bf2f8725be33b30",
+			"severeLow": "40",
+			"moderateLow": "50",
+			"moderateHigh": "110",
+			"severeHigh": "130"
+		},
+		"bloodPressure": {
+			"rangeType": "260c70dbb0ec4a40b0a25eb06b8fbe71",
+			"severeLow": "40",
+			"moderateLow": "50",
+			"moderateHigh": "120",
+			"severeHigh": "150"
+		},
+		"respiratoryRate": {
+			"rangeType": "9af6d32864024a69830d312eff161935",
+			"severeLow": "10",
+			"moderateLow": "12",
+			"moderateHigh": "25",
+			"severeHigh": "30"
+		},
+		"oxygenSaturation": {
+			"rangeType": "d13012dc57ae4c4e8c8494936794c297",
+			"severeLow": "84",
+			"moderateLow": "92"
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "typeID": "SEPSISBASELINE",
+  "messageDateTime": "dateFormat1",
+  "HealthSystemStayID":"00000000000000000000000000000882",
+  "CARDIO": 1,
+  "RESP": 2,
+  "CNS": 3,
+  "COAGULATION": 4,
+  "LIVER": 5,
+  "RENAL":6,
+  "TOTAL": 21
+}

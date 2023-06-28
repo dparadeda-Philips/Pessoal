@@ -1,0 +1,17 @@
+{
+  "typeID": "VSIFS",
+  "messageDateTime": "dateFormat1",
+  "objectID":"05caaa1b0ce64ce5ac38a5acfdb174ea",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "columnDate":"dateFormat2",
+  "columnDateGMTOffset": "0",
+  "cellLabelID":"3e8b402da22f403ba0a5f1f56e87fd44",
+  "cellTypeCatID":"a2eb36f5217d611cbbd4c180d720bb39",
+  "resultSourceID":"0253220e18bc4089a4dd1ad350abf795",
+  "objectIDCell":"0a464554e1384c5084f82bc291bc7d12",
+  "resultStatusIDCell":"39d8f36dc43045c8b04a0a06f20b6351",
+  "objectIDCellAttribute":"69d99f3748e84e12a2e0a45eb003f61d",
+  "cellTypeValueID":"c98dd127072a4899af8f981f548a0f0b",
+  "resultStatusIDCellAttribute":"9ef5ea20a97045fcb26dc3fcb86b6c24",
+  "attributeValue":"Yes"
+}

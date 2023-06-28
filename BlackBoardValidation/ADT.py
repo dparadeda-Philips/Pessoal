@@ -20,6 +20,7 @@ def ADT01(url, patientId, unitId, bedId, firstName, lastName, birthDate, gender,
 EVN|A01|{date}\n\
 PID||{patientId}|{patientId}|{patientId}|{firstName}^{lastName}||{birthDate}|{gender}\n\
 PV1||I|{unitId}^{bedId}^{bedId}'
+    print(hl7)
     try:
         response = requests.request("POST", url, data=hl7)
         print(response.text)
@@ -34,7 +35,7 @@ def ADT03(url, patientId, unitId, bedId, firstName, lastName, birthDate, gender,
 EVN|A03|{date}\n\
 PID||{patientId}|{patientId}|{patientId}|{firstName}^{lastName}||{birthDate}|{gender}\n\
 PV1||I|{unitId}^{bedId}^{bedId}'
-
+    print (hl7)
     try:
         response = requests.request("POST", url, data=hl7)
         print(response.text)

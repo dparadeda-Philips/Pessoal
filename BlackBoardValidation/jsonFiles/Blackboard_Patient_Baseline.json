@@ -1,0 +1,17 @@
+{
+	"messageDateTime": "dateFormat1",
+	"objectID": "FC00000000000000000000000B100114",
+	"patientHealthSystemStayID": "00000000000000000000000000000216",
+	"patient": {
+		"heartRate": {
+			"baselineMode": "86e2841cdcb64f54aa4049691b5bf8af",
+			"baselineValue": 99,
+			"baselineAlertType": "826be8edf431427ea895be6f89317a72"
+		},
+		"bloodPressure": {
+			"baselineMode": "86e2841cdcb64f54aa4049691b5bf8af",
+			"baselineValue": 98,
+			"baselineAlertType": "8ffc0ce67680485b92eec792d119d8ea"
+		}
+	}
+}

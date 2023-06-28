@@ -1,8 +1,8 @@
 from datetime import datetime
 
 class httpRequest:
-    adtUrl = r'http://cci-new-tie-server.us-east.philips-healthsuite.com/api/adt'
-    tieUrl = r'http://cci-new-tie-server.us-east.philips-healthsuite.com/tasy'
+    adtUrl = r'http://cel-sandbox-tie-server.sa1.hsdp.io/api/adt'
+    tieUrl = r'http://cel-sandbox-tie-server.sa1.hsdp.io/tasy'
     bifrostMessageType = 'async'
 
 class templateInfo:
@@ -13,8 +13,8 @@ class parameter:
 
 class patientInfo:
     patientId = 67713
-    unitId = 'JUNIT_TEST'
-    bedId = 67713
+    unitId = 'GH_CI'
+    bedId = 'GH_CI_BED_03'
     firstName = 'Blackboard'
     lastName = 'Test'
     birthDate = '19850324103000'
@@ -23,8 +23,9 @@ class patientInfo:
 
 class encounterInfo:
     encounterId = ''
-    pointOfCare = 'JUNIT_TEST'
-    patientLocation = '67713'
+    pointOfCare = patientInfo.unitId
+    unitType = 'ICU'
+    patientLocation = patientInfo.bedId
     eventDate = datetime.now()
 
 class dateFormatMask:
@@ -32,3 +33,11 @@ class dateFormatMask:
         "dateFormat1" : "%Y-%m-%d %H:%M:%S.%f",
         "dateFormat2" : "%Y-%m-%dT%H:%M"
     }
+
+class unitException:
+    ACUTE = [
+        'Blackboard_Sepsis_Sofa_Baseline'
+    ]
+    DISMISS = [
+        'Blackboard_Patient_Baseline'
+    ]

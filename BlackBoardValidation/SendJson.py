@@ -38,18 +38,21 @@ def jsonSendTIE(encounterId):
         encounterInfo.encounterId = encounterId['code'].zfill(32)
         for file in fileList:
             eventName = file.replace('.json', '')
-            try:
-                jsonContent = json.load(open(f'{templateInfo.path}/{file}'))
-            except:
+            if encounterInfo.unitType == 'ICU' and eventName in unitException.ACUTE or eventName in unitException.DISMISS:
                 pass
-            try:
-                print (update(jsonContent))
-            except:
-                print('Error', file)
-                pass
+            else:
+                try:
+                    jsonContent = json.load(open(f'{templateInfo.path}/{file}'))
+                except:
+                    pass
+                try:
+                    update(jsonContent)
+                except Exception as error:
+                    print('Error jsonSendTIE()', file, error)
+                    pass
 
 
-            sendJson(httpRequest.tieUrl, eventName, jsonContent)
+                sendJson(httpRequest.tieUrl, eventName, jsonContent)
     except:
         pass
 
@@ -62,35 +65,34 @@ def sendJson(url, eventName, jsonContent):
     }
     try:
         response = requests.request("POST", url, headers=headers, data=json.dumps(jsonContent))
-        print(response)
+        print(eventName, response)
     except:
-        response = "Error"
-        print(response)
+        response = "Error sendJson()"
+        print(eventName, response)
     return response
 
 if __name__ == "__main__":
-    # encounterID = ADT01(
-    #     httpRequest.adtUrl,
-    #     patientInfo.patientId,
-    #     patientInfo.unitId,
-    #     patientInfo.bedId,
-    #     patientInfo.firstName,
-    #     patientInfo.lastName,
-    #     patientInfo.birthDate,
-    #     patientInfo.gender,
-    #     parameter.timeZone
-    # )
+    encounterID = ADT01(
+        httpRequest.adtUrl,
+        patientInfo.patientId,
+        patientInfo.unitId,
+        patientInfo.bedId,
+        patientInfo.firstName,
+        patientInfo.lastName,
+        patientInfo.birthDate,
+        patientInfo.gender,
+        parameter.timeZone
+    )
     #Send encounter dict response from adt, change the template values and send to TIE
-    encounterID = "{\"status\":\"Success\",\"message\":\"Patient admitted.\",\"code\":\"1030993\"}"
     jsonSendTIE(eval(encounterID.replace("\"{", "{").replace("}\"", "}").replace("\\", "")))
-    # ADT03(
-    #     httpRequest.adtUrl,
-    #     patientInfo.patientId,
-    #     patientInfo.unitId,
-    #     patientInfo.bedId,
-    #     patientInfo.firstName,
-    #     patientInfo.lastName,
-    #     patientInfo.birthDate,
-    #     patientInfo.gender,
-    #     parameter.timeZone
-    # )
+    ADT03(
+        httpRequest.adtUrl,
+        patientInfo.patientId,
+        patientInfo.unitId,
+        patientInfo.bedId,
+        patientInfo.firstName,
+        patientInfo.lastName,
+        patientInfo.birthDate,
+        patientInfo.gender,
+        parameter.timeZone
+    )

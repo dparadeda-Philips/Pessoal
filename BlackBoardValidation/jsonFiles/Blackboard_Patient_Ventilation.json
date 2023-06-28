@@ -1,0 +1,11 @@
+{
+  "typeID": "CAREPLAN",
+  "messageDateTime": "dateFormat1",
+  "patientHealthSystemStayID": "00000000000000000000000000000882",
+  "historyID": "00000000000000000000000000000001",
+  "saveDateTimeUtc": "dateFormat2",
+  "saveDateTimeUtcOffset": "0",
+  "groupTypeID": "1f82689907194030876a9f393eade2d9",
+  "groupID": "00000000000000000000000000000001",
+  "valueID": "f485c826290e48a6a4c86be64c9f4d47"
+}
