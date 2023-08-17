@@ -1,5 +1,5 @@
 import json
-import os
+import os, sys
 from os import listdir
 from os.path import isfile, join
 from datetime import datetime
@@ -10,7 +10,6 @@ from utils.classes import *
 def readFiles():
     fileList = [f for f in listdir(templateInfo.path) if isfile(join(templateInfo.path, f))]
     return fileList
-
 
 def formatDate(dateTime, maskFormat):
     return dateTime.strftime(dateFormatMask.maskDict[maskFormat])
@@ -38,7 +37,7 @@ def jsonSendTIE(encounterId):
         encounterInfo.encounterId = encounterId['code'].zfill(32)
         for file in fileList:
             eventName = file.replace('.json', '')
-            if encounterInfo.unitType == 'ICU' and eventName in unitException.ACUTE or eventName in unitException.DISMISS:
+            if environment.selectedUnit == 'ICU' and eventName in unitException.ACUTE or eventName in unitException.DISMISS:
                 pass
             else:
                 try:
@@ -52,7 +51,7 @@ def jsonSendTIE(encounterId):
                     pass
 
 
-                sendJson(httpRequest.tieUrl, eventName, jsonContent)
+                sendJson(eval(f'{environment.selected}HttpRequest.tieUrl'), eventName, jsonContent)
     except:
         pass
 
@@ -60,39 +59,46 @@ def jsonSendTIE(encounterId):
 def sendJson(url, eventName, jsonContent):
     headers = {
         'BifrostMessageEvent': eventName,
-        'BifrostMessageType': httpRequest.bifrostMessageType,
+        'BifrostMessageType': eval(f'{environment.selected}HttpRequest.bifrostMessageType'),
         'Content-Type': 'application/json'
     }
     try:
         response = requests.request("POST", url, headers=headers, data=json.dumps(jsonContent))
-        print(eventName, response)
+        print(eventName, response, json.dumps(jsonContent))
     except:
         response = "Error sendJson()"
         print(eventName, response)
     return response
 
 if __name__ == "__main__":
+
+    environment.selected = environments.celSandbox
+    environment.selectedUnit = 'ICU'
+
     encounterID = ADT01(
-        httpRequest.adtUrl,
-        patientInfo.patientId,
-        patientInfo.unitId,
-        patientInfo.bedId,
-        patientInfo.firstName,
-        patientInfo.lastName,
-        patientInfo.birthDate,
-        patientInfo.gender,
-        parameter.timeZone
+        eval(f'{environment.selected }HttpRequest.adtUrl'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.patientId'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.unitId'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.bedId'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.firstName'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.lastName'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.birthDate'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.gender'),
+        parameter.timeZone,
+        0
     )
-    #Send encounter dict response from adt, change the template values and send to TIE
-    jsonSendTIE(eval(encounterID.replace("\"{", "{").replace("}\"", "}").replace("\\", "")))
+    # Send encounter dict response from adt, change the template values and send to TIE
+    if 'Patient already admitted' not in encounterID:
+        jsonSendTIE(eval(encounterID.replace("\"{", "{").replace("}\"", "}").replace("\\", "")))
     ADT03(
-        httpRequest.adtUrl,
-        patientInfo.patientId,
-        patientInfo.unitId,
-        patientInfo.bedId,
-        patientInfo.firstName,
-        patientInfo.lastName,
-        patientInfo.birthDate,
-        patientInfo.gender,
-        parameter.timeZone
+        eval(f'{environment.selected }HttpRequest.adtUrl'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.patientId'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.unitId'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.bedId'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.firstName'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.lastName'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.birthDate'),
+        eval(f'{environment.selected }PatientInfo{environment.selectedUnit}.gender'),
+        parameter.timeZone,
+        0
     )

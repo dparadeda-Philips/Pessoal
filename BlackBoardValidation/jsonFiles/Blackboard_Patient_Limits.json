@@ -11,10 +11,10 @@
 	},
 	"bloodPressure": {
 		"rangeType": "260c70dbb0ec4a40b0a25eb06b8fbe71",
-		"severeLow": "40",
-		"moderateLow": "50",
-		"moderateHigh": "120",
-		"severeHigh": "150"
+		"severeLow": "35",
+		"moderateLow": "40",
+		"moderateHigh": "151",
+		"severeHigh": "160"
 	},
 	"respiratoryRate": {
 		"rangeType": "9af6d32864024a69830d312eff161935",
@@ -38,10 +38,10 @@
 		},
 		"bloodPressure": {
 			"rangeType": "260c70dbb0ec4a40b0a25eb06b8fbe71",
-			"severeLow": "40",
-			"moderateLow": "50",
-			"moderateHigh": "120",
-			"severeHigh": "150"
+			"severeLow": "30",
+			"moderateLow": "41",
+			"moderateHigh": "152",
+			"severeHigh": "161"
 		},
 		"respiratoryRate": {
 			"rangeType": "9af6d32864024a69830d312eff161935",
